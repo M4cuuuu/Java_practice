@@ -23,11 +23,27 @@ class student {
  
 }
 
-//list of courses for different block
+//list of courses 
 class courses {
 
+  String courseName;
+  String courseCode;
+  String sched;
+
+    //course object
+    public courses(String courseName, String courseCode, String sched) {
+      
+      //array object initialization
+      courses [] course = new courses[7];
+
+      course[0].courseName = "Computer Programming";
+      course[0].courseCode = "CC103";
+      course[0].sched = "T / F";
+    }
+
+  }
   
-}
+
 
 public class COE {
  
