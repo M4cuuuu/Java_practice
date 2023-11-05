@@ -28,7 +28,7 @@ class courses {
 
   String courseName;
   String courseCode;
-  String sched;
+ 
 
     //course object
     public courses(String courseName, String courseCode, String sched) {
@@ -36,34 +36,34 @@ class courses {
       //array object initialization
       courses [] course = new courses[7];
 
-      course[0].courseName = "Computer Programming";
+      course[0].courseName = "Computer Programming 2";
       course[0].courseCode = "CC103";
-      course[0].sched = "T / F";
-      course[1].courseName = "Computer Programming";
-      course[1].courseCode = "CC103";
-      course[1].sched = "T / F";
-      course[2].courseName = "Computer Programming";
-      course[2].courseCode = "CC103";
-      course[2].sched = "T / F";
+      
+      course[1].courseName = "English";
+      course[1].courseCode = "ASDF123";
+      
+      course[2].courseName = "Math";
+      course[2].courseCode = "ADW12";
+      
       course[3].courseName = "Computer Programming";
       course[3].courseCode = "CC103";
-      course[3].sched = "T / F";
+      
       course[4].courseName = "Computer Programming";
       course[4].courseCode = "CC103";
-      course[4].sched = "T / F";
+      
       course[5].courseName = "Computer Programming";
       course[5].courseCode = "CC103";
-      course[5].sched = "T / F";
+      
       course[6].courseName = "Computer Programming";
       course[6].courseCode = "CC103";
-      course[6].sched = "T / F";
+      
     }
 
-  }
+  
 
 
 public void header() {
-  
+
         String school = "Catanduanes State University";
         String schoolAdd = "Virac, Catanduanes";
         String cert = "CERTIFICATE OF ENROLMENT";
@@ -75,6 +75,11 @@ public void header() {
         System.out.println("\t\t\t\t\t\t\t\t\t\t      " + schoolAdd);
         System.out.println("\t\t\t\t\t\t\t\t\t\t  "+ cert);
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+}
+
+public void a() {
+
+
 }
   
 public void b() {
@@ -92,7 +97,17 @@ public class COE {
         
         
       
+      if(block === a || A) {
 
+        a();
+      } if else (block === b || B){
+
+        b();//for block b COE Scheds
+      } else {
+
+        System.out.println("Put valid Block nigga!");
+
+      }
 
        
       
@@ -100,4 +115,5 @@ public class COE {
 
 
 
+  }
 }
