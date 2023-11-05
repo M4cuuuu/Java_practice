@@ -4,6 +4,7 @@ import java.util.Scanner;
 class student {
 
   String firstName;
+  String middleName;
   String lastName;
   int age;
   String program;
@@ -11,14 +12,22 @@ class student {
   int yearLvl;
 
   //student object
- public student( String firstName, String lastName, int age, String program, char block, int yearLvl) {
+ public student( String firstName, String middleName, String lastName, int age, String program, char block, int yearLvl) {
         this.firstName = firstName;
+        this.middleName = middleName;
         this.lastName = lastName;
         this.age = age;
         this.program = program;
         this.block = block;
         this.yearLvl = yearLvl;
 }
+
+void studentD () {
+
+  System.out.printf("Student name: %s %s \n", firstName,lastName);
+  System.out.printf("age: %f",age);
+
+}//method for student details this include the information regarding the student object
 
  
 }
@@ -60,9 +69,13 @@ class courses {
     }
 
   
+  
 
-
-public void header() {
+ 
+}
+public class coe {
+ 
+void header() {
 
         String school = "Catanduanes State University";
         String schoolAdd = "Virac, Catanduanes";
@@ -77,32 +90,32 @@ public void header() {
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 }
 
-public void a() {
+ void a() {
 
 
 }
   
-public void b() {
+ void b() {
 
 
 }
-
-public class COE {
- 
-
        
      public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         
+        coe head = new coe();
+        coe blockA = new coe();
+        coe blockB = new coe();
+       
         
       
-      if(block === a || A) {
-
-        a();
-      } if else (block === b || B){
-
-        b();//for block b COE Scheds
+      if(block == "a" || "A") {
+        head.header();
+        blockA.a();//for block a COE scheds details
+      } if else (block == "b" || "B"){
+        head.header();
+        blockB.b();//for block b COE Scheds details
       } else {
 
         System.out.println("Put valid Block nigga!");
@@ -116,4 +129,4 @@ public class COE {
 
 
   }
-}
+
