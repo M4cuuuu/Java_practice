@@ -44,14 +44,14 @@ public static void main(String[] args) {
 
     
     
+// work here next!
+//    if(student1.block == "a" || student1.block == "A") {
         
-   if(student1.block == "a" || student1.block == "A") {
-        
 
-    } else if (student1.block == "b" || student1.block == "B") {
+//     } else if (student1.block == "b" || student1.block == "B") {
 
 
-    }
+//     }
     
     
                 // Print course names and codes
