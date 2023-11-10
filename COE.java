@@ -14,10 +14,9 @@ public static void main(String[] args) {
         student student1 = new student();
 
 
-        System.out.println("Please input the first name: ");
-        student1.first_name = scanner.nextLine();
-        System.out.println("Please input the last name: ");
-        student1.last_name = scanner.nextLine();
+        System.out.println("Please input the student name: ");
+        student1.full_name = scanner.nextLine();
+        
        
         String school = "Catanduanes State University";
         String school_address = "Virac, Catanduanes";
@@ -27,12 +26,17 @@ public static void main(String[] args) {
         System.out.println("\t\t\t\t\t\t\t\t\t\t" + school);
         System.out.println("\t\t\t\t\t\t\t\t\t\t      " + school_address );
         System.out.println("\t\t\t\t\t\t\t\t\t\t  " + coe);
-        System.out.println("\t\t\t\t\t\t\t\t\t\t  " + sy);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t " + sy);
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
-        System.out.printf("Student Name: %s %s \n",student1.first_name,student1.last_name);
+        System.out.printf("Student Name: %s \t\t\t\t Program: %s\n",student1.full_name,student1.program);
+        System.out.printf("Age: %d \n",student1.age);
+        System.out.printf("Block: %s\n",student1.block);
+    
 
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        
+
                 course[0] = new Course("Computer Programming 2", "CC103", 4);
                 course[1] = new Course("Fundamentals of Information System", "IS211", 3);
                 course[2] = new Course("Organization and Management Concept", "IS212", 3);
@@ -42,29 +46,37 @@ public static void main(String[] args) {
                 course[6] = new Course("Self Defense", "PE2", 3);
                 course[7] = new Course("National Service Training Program 2", "NSTP2", 3);
 
-    
-    
-// work here next!
-//    if(student1.block == "a" || student1.block == "A") {
-        
 
-//     } else if (student1.block == "b" || student1.block == "B") {
+    String [] timeSchedA = new String[8];
+    String [] timeSchedB = new String[8];
+    String [] day = {"M/Th","T/F","M/Th","T/F","M/Th","T/F","T/F","Sat"};
 
 
-//     }
+    timeSchedA[0] = "7:30am-9:30am";  
+    timeSchedA[1] = "9:30am-10:30am";
+    timeSchedA[2] = "1:00pm-2:30pm";
+    timeSchedA[3] = "10:30am-12:00";
+    timeSchedA[4] = "9:30am-10:30am";
+    timeSchedA[5] = "1:00pm-2:30pm";
+    timeSchedA[6] = "7:30am-9:30am";
+    timeSchedA[7] = "7:30am-9:30am";
     
+
+  
+
+     System.out.println("\t Code \t\t\t\tCourseName\t\t\t\t\tUnits");
     
                 // Print course names and codes
 
                 for (int i = 0; i < course.length; ++i) {
-                    System.out.println(course[i].courseCode+ "\t\t\t\t"+course[i].courseName);
+                    System.out.println("\t"+course[i].courseCode+ "\t\t\t"+course[i].courseName);//fix here next!
                 }
 
                 
 
 
 
-
+scanner.close();
 
     }
 

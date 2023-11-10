@@ -1,7 +1,7 @@
 package package1;
 
 public class Course {
-     //course details
+     
      public String courseName;
      public String courseCode;
      public int units;
@@ -34,7 +34,8 @@ public static void main(String[] args) {
 
     // Print course names
     for (int i = 0; i < course.length; i++) {
-        System.out.println(course[i].courseName);
+        System.out.println(course[i].units+"\t\t\t"+course[i].courseName+"\t\t"+ course[i].courseCode);
+        
     }
   
 
