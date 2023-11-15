@@ -7,10 +7,7 @@ public class student {
     public int age;
     public String student_id;
     public String block;
-    public String program;
+    public String program= "BS Information System";
     public String college = "CICT";
 
-
-   
-    
 }

@@ -32,13 +32,21 @@ public static void main(String[] args) {
     course[6] = new Course("Self Defense", "PE2", 3);
     course[7] = new Course("National Service Training Program 2", "NSTP2", 3);
 
-    // Print course names
-    for (int i = 0; i < course.length; i++) {
-        System.out.println(course[i].units+"\t\t\t"+course[i].courseName+"\t\t"+ course[i].courseCode);
-        
-    }
-  
 
+    String cc = "Course Code";
+    String cn = "Course Name";
+    String u = "Units";
+    // Print course names
+    String formattedUnits = String.format("\t%-1s\t%-40s\t%-4s",cc,cn,u);
+
+    System.out.println(formattedUnits);
+    
+                // Print course names and codes
+
+                for (int i = 0; i < course.length; ++i) {
+                    String formattedOutput = String.format("\t%-8s\t%-40s\t%-4d", course[i].courseCode, course[i].courseName, course[i].units);
+                    System.out.println(formattedOutput);
+                }
          }       
     
         }   
