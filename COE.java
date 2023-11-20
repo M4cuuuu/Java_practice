@@ -49,7 +49,7 @@ public static void main(String[] args) {
         course[7] = new Course("National Service Training Program 2", "NSTP2", 3, "Mr. Rodrigo Roa Du30");
 
         String [] timeSchedA = new String[8];
-        String [] timeSchedB = new String[8];
+        String [] timeSchedB = new String[8]; // fix this next
         String [] day = {"M/Th","T/F","M/Th","T/F","M/Th","T/F","T/F","Sat"};
 
 
