@@ -140,7 +140,9 @@ public static void main(String[] args) {
                 
                 for (int i = 0; i < course.length; ++i) {
                     double unitsWithDecimal = (double) course[i].units; // Convert units to double
-                    String formattedOutput = String.format("\t%-8s\t%-35s\t%-10.1f\t%s%s\t%s\t%-70s", course[i].courseCode, course[i].courseName, unitsWithDecimal, timeSchedA[i], day[i], course[i].instructor, section);
+                    double tfWithDecimal = (double) course[i].tf;
+                    double labWithDecimal = (double) course[i].lab;
+                    String formattedOutput = String.format("\t%-8s\t%-35s\t%-10.1f %s %s \t%s%s\t%s\t%-70s", course[i].courseCode, course[i].courseName, unitsWithDecimal,tfWithDecimal,labWithDecimal, timeSchedA[i], day[i], course[i].instructor, section);
                     System.out.println(formattedOutput);
                 }
                 
